@@ -25,8 +25,53 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 
 ---
 
-## 💻 Program
+## 💻 Program:
+```
 
-## Output
+class PlantItem:
+    def get_type(self):
+        pass
 
-## Result
+    def get_color(self):
+        pass
+
+class Beans:
+    def get_type(self):
+        return "Vegetable"
+
+    def get_color(self):
+        return "Green"
+
+class Mango:
+    def get_type(self):
+        return "Fruit"
+
+    def get_color(self):
+        return "Yellow"
+
+def describe_item(item):
+    print("Type:", item.get_type())
+    print("Color:", item.get_color())
+
+# Create objects
+b = Beans()
+m = Mango()
+
+print("Describing Beans:")
+describe_item(b)
+
+print("\nDescribing Mango:")
+describe_item(m)
+```
+## Output:
+```
+Describing Beans:
+Type: Vegetable
+Color: Green
+
+Describing Mango:
+Type: Fruit
+Color: Yellow
+```
+## Result:
+The program was successful.
